@@ -44,3 +44,63 @@ printf("the value of a / b is %d\n", a / b );
 printf("the value of a %% b is %d\n", a % b );
 return 0;
 }
+
+int main(){
+  int a = 5 , b = 10;
+
+  printf(" a == b %d\n", a == b);
+  printf("a != b %d\n", a != b);
+  printf("a > b %d\n", a > b);
+  printf("a < b %d\n", a < b);
+
+  printf("a == b && a == 10 %d\n", ( a == b) && (a == 10));
+printf("(a > b) || (b < 20): %d\n", (a > b) || (b < 20));
+printf("!(a == b): %d\n", !(a == b));
+
+  return 0;
+}
+
+int main (){
+  int a = 10;
+
+  a+= 5;
+  printf("now the total val : %d\n", a);
+ 
+  a -= 3;
+  printf("now the total val : %d\n", a);
+
+  a *= 2;
+  printf("now the total val : %d\n", a);
+
+  a/= 2;
+  printf("now the total val : %d\n", a);
+
+  a %= 2;
+  printf("now the total val : %d\n", a);
+
+  return 0;
+}
+
+int main (){
+  int a = 5;
+
+  printf("orignal value of a :%d\n", a);
+  printf("post-increment a :%d\n", ++a);
+  printf("now value of a :%d\n", a);
+
+   a = 5;
+
+  printf("pre-increment of a :%d\n", a++);
+  printf("now value of a :%d\n", a);
+
+  return 0;
+}
+int main (){
+  int a = 10 , b = 3;
+ float result;
+
+ result = (float) a / b ;
+
+ printf("%.2f\n", result);
+ return 0 ;
+}

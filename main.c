@@ -104,3 +104,32 @@ int main (){
  printf("%.2f\n", result);
  return 0 ;
 }
+
+int main (){
+  int age = 20;
+  if (age >= 18){
+   printf("I am above 18");
+  }
+  
+  return 0;
+}
+
+int main (){
+  int number = 10;
+  if (number % 2 == 0){
+   printf("Even number");
+  }
+  
+  return 0;
+}
+
+int main(){
+  int marks;
+  printf("Enter your marks :\n");
+  scanf("%d",marks);
+  if(marks >= 40){
+    printf("You pass the exam :\n");
+    
+  }
+  return 0;
+}

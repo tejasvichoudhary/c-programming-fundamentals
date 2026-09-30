@@ -133,3 +133,59 @@ int main(){
   }
   return 0;
 }
+int main (){
+  int marks = 90;
+
+  if (marks >= 90)
+  {
+    printf("The grade is A\n");
+  } else if (marks >= 80)
+  {
+    printf("The grade is B\n");
+  }else if (marks >= 70)
+  {
+    printf("The grade is C\n");
+  }else if (marks >= 60)
+  {
+    printf("The grade is D\n");
+  } else
+  {
+   printf("You are fail\n");
+  }
+  return 0;
+
+}
+int main(){
+  int age = 25;
+  char citizen = "Y";
+
+  if (age >= 18){
+    if (citizen == "Y"){
+     printf("You are eligible to vote.");
+    } else{
+      printf("You are not a citizen, so you cannot vote.");
+    } } else {
+      printf("You are not old enough to vote.");
+    }
+  
+  
+}
+int main(){
+int day = 2;
+switch (day) {
+case 1:
+printf("Monday");
+break;
+
+case 2:
+printf("Tuesday");
+break;
+
+case 3:
+printf("Wednesday");
+break;
+
+default :
+printf("Invalid day");
+}
+}

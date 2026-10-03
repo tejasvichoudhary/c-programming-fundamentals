@@ -106,7 +106,7 @@ return 0;
 
 int main(){
     char ch;
-    printf("Enter any character: ");
+    printf("Enter any character: \n");
     scanf("%c", &ch);
     if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
     {
@@ -128,4 +128,96 @@ int main(){
 
     return 0;
 }
+// Q7. A student is eligible for admission if:
+#include <stdio.h>
+
+int main() {
+    int total, maths, physics, chemistry;
+
+    printf("Enter marks of math, physics, and chemistry:\n");
+    scanf("%d %d %d", &maths, &physics, &chemistry);
+
+    total = maths + physics + chemistry;
+
+    if (maths >= 60 && physics >= 50 && chemistry >= 40 && total >= 200) {
+        printf("Eligible for admission\n");
+    } else {
+        printf("Not eligible for admission\n");
+    }
+
+    return 0;
+}
+
+// Q8. Write a program that asks for a username and password (hardcode both), and prints “Login Successful” if both match, otherwise “Access Denied”. Use an if-else statement.
+
+int main(){
+   char username;
+   int password;
+   printf("Enter username (a single letter):\n");
+    scanf(" %c", &username);
+    
+    printf("Enter password:\n");
+    scanf("%d", &password);
+     
+    if (username == 'A' && password == 1234) 
+    {
+        printf("Login Successful\n");
+    } 
+    else 
+    {
+       printf("Access Denied\n");
+    }
+    
+    return 0;
+}
+
+// Q9. Write a program that takes a number and prints whether it lies between 1–10, 11– 20, or greater than 20 using an if-else-if ladder.
+
+int main(){
+    int num;
+printf("Enter num :\n");
+    scanf("%d", &num);
+
+     if ( num >= 1 && num <= 10 )
+     {
+        printf("Number is between 1 to 10\n");
+     } else if (num >= 11 && num <= 20)
+     {
+        printf("Number is between 11 to 20\n");
+     
+     } else{
+        printf(" Number is greater then 20\n");
+     }
+return 0;
+}
+
+// Q10. Recreate the grading system (Exercise 3) using a switch statement by dividing the marks by 10 and matching the integer value.
+
+int main (){
+    int a , b;
+    printf("Enter marks :\n");
+    scanf("%d", &a );
+    b = a / 10;
+    switch (b){
+        case 10:
+        case 9:
+            printf("The grade is A\n");
+            break;
+        case 8: 
+            printf("The grade is B\n");
+            break;
+        case 7:  
+            printf("The grade is C\n");
+            break;
+        case 6: 
+            printf("The grade is D\n");
+            break;
+        default: 
+            printf("The grade is Fail\n");
+            break;
+    }
+    return 0;
+}
+
+
     

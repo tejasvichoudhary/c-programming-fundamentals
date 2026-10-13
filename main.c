@@ -206,3 +206,33 @@ int main(){
     } 
     return 0; 
 }
+void greet(){
+  printf("Hello sabko good night\n");
+}
+
+int main(){
+  greet();
+}
+
+int sum(int a, int b);
+
+int main(){
+  int result = sum(5, 6); 
+    printf("Total: %d\n", result); 
+    return 0;
+}
+
+int sum(int a, int b){
+  int total;
+  total = a + b;
+  return total;
+}
+
+int add(int a, int b) {
+return a + b;
+}
+int main() {
+int sum = add(5, 6);
+printf("Sum = %d", sum);
+return 0;
+}

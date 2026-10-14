@@ -236,3 +236,37 @@ int sum = add(5, 6);
 printf("Sum = %d", sum);
 return 0;
 }
+
+void change(int x) {
+x = 10;
+}
+int main() {
+int a = 5;
+change(a);
+printf("%d", a); // Answer will be 5
+return 0;
+}
+
+void change(int *x) {
+*x = 10;
+}
+int main() {
+int a = 5;
+change(&a);
+printf("%d", a); // Answer will be 10
+return 0;
+}
+
+int factorial(int n){
+  if (n == 0){
+   return 1;
+  }
+  
+return n * factorial(n - 1);
+}
+
+int main (){
+  int num = 5;
+  printf("The fraction of %d is %d.", num, factorial(num));
+  return 0;
+}

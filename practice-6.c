@@ -67,3 +67,53 @@ int main(void){
     printf(" call a function = %d", call(x));
     return 0;
 }
+
+// Q6. Write a function swap(int *x, int *y) that swaps the values of two integers using pointers.
+
+int swap(int *x, int *y){
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main(void){
+    int a,b;
+   printf("Enter first number:\n");
+   scanf("%d", &a);
+   printf("Enter second number:\n");
+   scanf("%d", &b);
+   swap(&a, &b);
+     printf("After swap: a = %d, b = %d\n", a, b);
+    return 0;
+}
+
+// Q7. Write a recursive version of the factorial program using a function factorial(int n).
+
+int factorial(int n){
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+int main(){
+    printf("Enter the number:", factorial(5));
+    return 0;
+}
+
+// Q8. Write a recursive function fibonacci(int n) that prints the first n terms of the Fibonacci series.
+
+int fibonacci(int n){
+   int first = 0;
+int second = 1;
+int next;
+    for (int i = 0; i < n; i++){
+       next = first + second ;
+       
+    } 
+    return next;
+}
+
+int main(){
+    printf("Enter the number:%d", fibonacci(5));
+    return 0;
+}

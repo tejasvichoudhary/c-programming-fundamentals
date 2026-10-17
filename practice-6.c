@@ -102,18 +102,68 @@ int main(){
 
 // Q8. Write a recursive function fibonacci(int n) that prints the first n terms of the Fibonacci series.
 
-int fibonacci(int n){
-   int first = 0;
-int second = 1;
-int next;
-    for (int i = 0; i < n; i++){
-       next = first + second ;
-       
-    } 
-    return next;
+
+int fibonacci( int n) {
+    if (n == 0) {
+        return 0;
+    }
+if (n == 1)
+{
+   return 1;
+}
+return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int terms;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &terms);
+
+    for (int i = 0; i < terms; i++)
+    {
+       printf("%d", fibonacci(i));
+    }
+    
+
+    printf("\n");
+    return 0;
+}
+
+// Q9. Write a recursive function power(int base, int exp) to calculate base^exp.
+
+int power(int base, int exp){
+    if (exp == 0){
+       return 1 ;
+    }
+    return base * power(base , exp - 1);
 }
 
 int main(){
-    printf("Enter the number:%d", fibonacci(5));
+    int base;
+    int exp;
+    printf("enter the base : " );
+    scanf("%d", &base);
+    printf("enter the exp : " );
+    scanf("%d", &exp);
+
+    printf("Answer = %d\n", power(base, exp));
+    return 0; 
+}
+
+// Q10. Write a function sumOfDigits(int n) that returns the sum of digits of a given number.
+
+int sumofDigits(int n){
+    if (n == 0)
+    {
+        return 0;
+    }
+    return n % 10 + sumofDigits(n / 10);
+}
+int main(){
+    int n;
+    printf("enter the base : " );
+    scanf("%d", &n);
+    printf("Answer = %d\n", sumofDigits(n));
     return 0;
 }

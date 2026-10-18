@@ -270,3 +270,37 @@ int main (){
   printf("The fraction of %d is %d.", num, factorial(num));
   return 0;
 }
+int main(){
+int age[3] = {20,30,40};
+age[2] = 30; // it change the value of 40 to 30
+printf("Print the first age = %d\n",age[0]);
+printf("Print the first age = %d\n",age[1]);
+printf("Print the first age = %d\n",age[2]);
+}
+
+
+int main(){
+int arr[5];
+for (int i = 0; i < 5; i++)
+{
+  printf("arr[%d]\n", i + 1);
+  scanf("%d", &arr[i]);
+}
+printf("You entered :\n");
+for (int i = 0; i < 5; i++){
+  printf(" %d\n", arr[i]);
+}
+
+return 0;
+}
+
+int main(){
+  int arr[5] = {10 , 20 , 30 , 40 , 50};
+  int sum = 0;
+  for (int i = 0; i < 5; i++)
+  {
+  sum += arr[i];
+  }
+  printf("Sum = %d", sum);
+  return 0;
+}

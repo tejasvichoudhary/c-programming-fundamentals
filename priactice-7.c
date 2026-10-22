@@ -52,4 +52,36 @@ int main() {
     return 0;
 }
 
+// Q4. Write a program to reverse the elements of an array.
+
+int main(){
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    for (int i = size - 1; i >= 0; i--)
+    {
+       printf(" Reverse element print : %d\n",arr[i]);
+    }
+    return 0;
+}
+
+// Q5. Write a program that counts how many even and odd numbers are in an array.
+
+int main(void) {
+    int arr[] = {2, 5, 7, 8, 10, 11};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int even = 0;
+    int odd = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    }
+    printf("Even: %d\n", even);
+    printf("Odd: %d\n", odd);
+
+    return 0;
+}
 

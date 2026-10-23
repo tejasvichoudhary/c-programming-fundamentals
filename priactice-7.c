@@ -85,3 +85,51 @@ int main(void) {
     return 0;
 }
 
+// Q6. Write a program to search for a given number in an array.
+
+int main (){
+int arr[] = {4, 7, 9, 2, 5};
+int size = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    int found = 0;
+
+    printf("Enter the number to search: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < size; i++) {
+        if (n == arr[i]) {
+            printf("%d found at index %d\n", n, i);
+            found = 1;
+            break;
+        }
+    }
+
+    if (found == 0) {
+        printf("Number not found\n");
+    }
+
+    return 0;
+}
+
+
+
+int main(void) {
+    int arr1[] = {1, 2, 3, 4, 5};
+    int arr2[5];
+
+    for (int i = 0; i < 5; i++) {
+        arr2[i] = arr1[i];
+    }
+
+    printf("Original array: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr1[i]);
+    }
+
+    printf("\nCopied array: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr2[i]);
+    }
+
+    return 0;
+}

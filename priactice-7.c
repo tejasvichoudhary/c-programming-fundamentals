@@ -111,7 +111,7 @@ int size = sizeof(arr) / sizeof(arr[0]);
     return 0;
 }
 
-
+// Q7. Write a program to copy all elements of one array into another array.
 
 int main(void) {
     int arr1[] = {1, 2, 3, 4, 5};
@@ -130,6 +130,30 @@ int main(void) {
     for (int i = 0; i < 5; i++) {
         printf("%d ", arr2[i]);
     }
+
+    return 0;
+}
+
+// Q8. Write a program to find the sum of array elements present at even and odd indices separately.
+
+
+int main(void) {
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int evenSum = 0;
+    int oddSum = 0;
+
+    for (int i = 0; i < size; i++) {
+       if (i % 2 == 0) {
+            evenSum += arr[i];
+        } else {
+            oddSum += arr[i];
+        }
+    }
+
+    printf("Sum at even indices: %d\n", evenSum);
+    printf("Sum at odd indices: %d\n", oddSum);
 
     return 0;
 }

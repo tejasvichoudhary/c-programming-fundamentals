@@ -156,4 +156,45 @@ int main(void) {
     printf("Sum at odd indices: %d\n", oddSum);
 
     return 0;
+} 
+
+// Q9. Write a program to find the second largest number in an array.
+
+int main(void) {
+    int arr[] = {12, 35, 1, 10, 34, 1};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int big = arr[0];
+    int secondbig = 0;
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > big) {
+            secondbig = big;
+            big = arr[i];
+        }
+        else if (arr[i] < big && arr[i] > secondbig) {
+            secondbig = arr[i];
+        }
+    }
+    printf("Second largest: %d\n", secondbig);
+
+    return 0;
+}
+
+// Q10. Write a program that takes two arrays of the same size and stores their element-wise sum in a third array.
+
+int main (){
+    int arr1[] = {1,2,3,4,5};
+    int arr2[] = {5,4,3,2,1};
+
+    int size = sizeof(arr1) / sizeof(arr1[0]);
+    int sum[5];
+    for (int i = 0; i < size; i++)
+    {
+      sum[i] = arr1[i] + arr2[i];
+    }
+    for (int i = 0; i < size; i++) {
+        printf("%d ", sum[i]);
+    }
+    return 0;
 }

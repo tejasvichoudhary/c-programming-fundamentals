@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
  
 int main()
 {
@@ -331,7 +332,29 @@ printf("\n");
 return 0;
 }
 
+int main (){
+  char str[] = {'H', 'e','l','l','o','\0'};
+    char str1[] = "Hello";
+  printf("%s",str);
+  printf("%s", str1);
+  return 0;
+}
 
+int main (){
+  char name[50];
+  printf("Enter the name :");
+  scanf("%s", name);
+
+  printf("The name is %s\n", name);
+return 0;
+}
+
+int main (){
+  char name[50];
+  fgets(name, sizeof(name), stdin);
+  printf("Enter the name :%s", name);
+  return 0;
+}
 
 
 

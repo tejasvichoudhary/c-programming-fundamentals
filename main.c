@@ -356,5 +356,36 @@ int main (){
   return 0;
 }
 
+// Common string function 
+
+int main (){
+  char str[50] = "Hello";
+  char str1[50] = "World";
+  printf("length of an srt : %lu\n", strlen(str));
+    strcat(str, str1);
+    printf("Concatenated string : %s\n", str);
+    strcpy(str1, " C Language");
+        printf("Copied String : %s\n", str1 );
+    printf("comprison Result: %d\n", strcmp("abc","bca"));
+  return 0;
+}
+
+int main (){
+  char str[] = "CodeWithGem";
+    for(int i = 0; str[i] != '\0'; i++){
+        printf("%c", str[i]);
+    }
+  return 0;
+}
+
+int main (){
+  char name[50];
+  printf("Enter your name :");
+  fgets(name,sizeof(name), stdin);
+  printf("Your name is : %s", name);
+  printf(" Length : %zu\n", strlen(name));
+  return 0;
+}
+
 
 

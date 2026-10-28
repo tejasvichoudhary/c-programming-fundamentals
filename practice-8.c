@@ -40,3 +40,49 @@ int main() {
 
     return 0;
 }
+
+// Q4. Write a program to compare two strings without using the strcmp() function.
+
+
+#include <stdio.h>
+
+int main() {
+    char str[50] = "Apple";
+    char str1[50] = "Apple";
+
+    int i;
+
+    for (i = 0; str[i] != '\0' && str1[i] != '\0'; i++) {
+        if (str[i] != str1[i]) {
+            break;
+        }
+    }
+
+    if (str[i] == '\0' && str1[i] == '\0') {
+        printf("Strings are equal");
+    } else {
+        printf("Strings are not equal");
+    }
+
+    return 0;
+}
+
+// Q5. Write a program to concatenate two strings without using the strcat() function.
+  
+int main(){
+    char str[50] = "Hello";
+    char str1[50] = "World";
+    int i, j;
+
+    for ( i = 0; str[i] != '\0'; i++){
+       
+    }
+
+    for ( j = 0; str1[j] != '\0'; j++){
+       str[i + j] = str1[j];
+    }
+    
+    printf("%s", str);
+    
+return 0;
+}

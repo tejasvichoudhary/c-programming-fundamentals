@@ -86,3 +86,64 @@ int main(){
     
 return 0;
 }
+
+// Q6. Write a program to count the number of vowels and consonants in a string.
+
+
+#include <stdio.h>
+
+int main(void) {
+    char str[50] = "Programming";
+    int vowel = 0;
+    int consonants = 0;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == 'a' || str[i] == 'e' ||
+            str[i] == 'i' || str[i] == 'o' ||
+            str[i] == 'u') {
+            vowel++;
+        } else {
+            consonants++;
+        }
+    }
+
+    printf("Vowels: %d\n", vowel);
+    printf("Consonants: %d\n", consonants);
+
+    return 0;
+}
+// Q7. Write a program to reverse a string without using the strrev() function.
+
+int main(void) {
+    char str[] = "Harry";
+    int length = strlen(str);
+
+    for (int i = length - 1; i >= 0; i--) {
+        printf("%c", str[i]);
+    }
+
+    printf("\n");
+    return 0;
+}
+
+// Q8. Write a program to check whether a given string is a palindrome or not.
+
+int main(void) {
+    char str[50] = "madam";
+    int length = strlen(str);
+    int palindrome = 1;
+
+    for (int i = 0; i < length / 2; i++) {
+        if (str[i] != str[length - 1 - i]) {
+            palindrome = 0;
+            break;
+     }
+    }
+    if (palindrome == 1) {
+        printf("Palindrome");
+    } else {
+        printf("Not a palindrome");
+    }
+
+    return 0;
+}

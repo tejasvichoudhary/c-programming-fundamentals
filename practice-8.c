@@ -147,3 +147,45 @@ int main(void) {
 
     return 0;
 }
+
+
+// Q9. Write a program to count the number of words in a given sentence.
+
+#include <stdio.h>
+
+int main() {
+    char str[50] = "I love coding in C";
+    int count = 0;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ') {
+            count++;
+        }
+    }
+    int word = count + 1;
+    printf("Count: %d", word);
+
+    return 0;
+}
+// Q10. Write a program to convert a string into uppercase and lowercase without using string library functions.
+
+int main (){
+    char str[] = "CodeWithTejasvi";
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 32;
+        }
+    }
+
+    printf("Uppercase: %s\n", str);
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + 32;
+        }
+    }
+
+    printf("Lowercase: %s\n", str);
+
+    return 0;
+}

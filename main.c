@@ -387,5 +387,22 @@ int main (){
   return 0;
 }
 
+int main (){
+  int *ptr;
+  int a = 10;
+  ptr = &a; // Assigning address of a to ptr
+  printf("Address of a: %p\n", ptr);
+printf("Value of a: %d\n",*ptr);
+    return 0;
+}
+
+int main() {
+int x = 5;
+int *p = &x;
+int **pp = &p;
+printf("Value of x = %d\n",**pp);
+return 0;
+   
+}
 
 

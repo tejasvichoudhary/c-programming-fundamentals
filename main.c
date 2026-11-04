@@ -405,4 +405,23 @@ return 0;
    
 }
 
+int main() {
+int arr[3] = {10, 20, 30};
+int *ptr = arr;
+for (int i = 0; i < 3; i++) {
+printf("%d ",
+*(ptr + i));
+}
+return 0;
+}
 
+int main() {
+int arr[] = {1, 2, 3};
+int *ptr = arr;
+printf("%d ",*ptr); // 1
+printf("%d ",*(ptr+1)); // 2
+printf("%d ",*(ptr+2)); // 3
+
+return 0;
+
+} 
